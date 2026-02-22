@@ -17,9 +17,10 @@ export default function VisaInsurancePage() {
       <PageHero
         eyebrow="Visa & protection"
         title="Visa Services & Travel Insurance"
-        subtitle="Tourist visas to the UAE on request at a nominal fee, processed in accordance with UAE law. Authorized travel insurance for groups and individuals."
+        subtitle="UAE visas and travel insurance, processed as per UAE law."
         primaryCta={{ href: "/contact", label: "Enquire now" }}
         secondaryCta={{ href: "/holiday-package", label: "Holiday packages" }}
+        compact
       />
 
       <Section

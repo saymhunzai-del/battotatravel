@@ -5,7 +5,7 @@ import { FeatureGrid } from "@/components/FeatureGrid";
 import { PackageCard } from "@/components/PackageCard";
 import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { DestinationCard } from "@/components/DestinationCard";
-import { featuredPackages } from "@/data/packages";
+import { getPackages } from "@/lib/packages";
 import { CtaStrip } from "@/components/CtaStrip";
 
 const destinations = [
@@ -18,7 +18,7 @@ const destinations = [
   {
     href: "/holiday-package",
     name: "Abu Dhabi",
-    imageSrc: "https://images.unsplash.com/photo-1591604129938-5a8a2a20a0aa?w=600&q=80",
+    imageSrc: "https://images.unsplash.com/photo-1512632578888-169bbbc64f33?w=600&q=80",
     imageAlt: "Abu Dhabi"
   },
   {
@@ -35,7 +35,8 @@ const destinations = [
   }
 ];
 
-export default function HomePage() {
+export default async function HomePage() {
+  const featuredPackages = await getPackages();
   return (
     <>
       <PageHero
@@ -66,7 +67,7 @@ export default function HomePage() {
             />
           ))}
         </div>
-        <p style={{ marginTop: "1.25rem", textAlign: "center" }}>
+        <p style={{ marginTop: "1.25rem", textAlign: "left" }}>
           <Link href="/holiday-package" className="btn primary">
             View all holiday packages
           </Link>
@@ -124,7 +125,7 @@ export default function HomePage() {
             />
           ))}
         </div>
-        <p style={{ marginTop: "1.25rem", textAlign: "center" }}>
+        <p style={{ marginTop: "1.25rem", textAlign: "left" }}>
           <Link href="/holiday-package" className="link">
             Explore more destinations →
           </Link>

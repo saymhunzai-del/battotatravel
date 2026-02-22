@@ -5,7 +5,7 @@ import { Section } from "@/components/Section";
 import { ContentBlock } from "@/components/ContentBlock";
 import { Card } from "@/components/Card";
 import { PackageCard } from "@/components/PackageCard";
-import { featuredPackages } from "@/data/packages";
+import { getPackages } from "@/lib/packages";
 import { CtaStrip } from "@/components/CtaStrip";
 
 export const metadata: Metadata = {
@@ -14,15 +14,17 @@ export const metadata: Metadata = {
     "Curated holiday packages and hotel stays worldwide. Quality, excellence, and the best possible rates for individuals and groups."
 };
 
-export default function HolidayPackagePage() {
+export default async function HolidayPackagePage() {
+  const featuredPackages = await getPackages();
   return (
     <>
       <PageHero
         eyebrow="Leisure travel"
         title="Holiday Packages & Getaways"
-        subtitle="Our objective is to provide quality and excellence to our customers promptly and exclusively. We understand what a traveler anticipates—and what it takes to satisfy them."
+        subtitle="Quality packages and competitive rates for individuals and groups."
         primaryCta={{ href: "/contact", label: "Plan your holiday" }}
         secondaryCta={{ href: "/visa-insurance", label: "Visa & insurance" }}
+        compact
       />
 
       <Section
@@ -58,7 +60,7 @@ export default function HolidayPackagePage() {
             />
           ))}
         </div>
-        <p style={{ marginTop: "1.25rem", textAlign: "center" }}>
+        <p style={{ marginTop: "1.25rem", textAlign: "left" }}>
           <Link href="/contact" className="btn primary">
             Request a quote or customise
           </Link>

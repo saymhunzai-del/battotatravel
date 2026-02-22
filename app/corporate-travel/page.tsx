@@ -17,9 +17,10 @@ export default function CorporateTravelPage() {
       <PageHero
         eyebrow="Enterprise solutions"
         title="Corporate Travel Management"
-        subtitle="Dedicated corporate staff to handle your travel requirements with the highest quality of service—corporate rates, discounts, promotions, and destination support."
+        subtitle="Corporate rates, discounts, and dedicated support."
         primaryCta={{ href: "/contact", label: "Request a proposal" }}
         secondaryCta={{ href: "/about-us", label: "Why Bin Batoota" }}
+        compact
       />
 
       <Section

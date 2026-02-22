@@ -17,9 +17,10 @@ export default function AboutUsPage() {
       <PageHero
         eyebrow="Since 1976"
         title="About Bin Batoota Travel & Tourism"
-        subtitle="A heritage of exemplary travel and tourism services, built on dedication, professionalism, and a commitment to every traveler we serve."
+        subtitle="Trusted travel partner since 1976."
         primaryCta={{ href: "/contact", label: "Get in touch" }}
         secondaryCta={{ href: "/corporate-travel", label: "Corporate solutions" }}
+        compact
       />
 
       <Section

@@ -11,6 +11,8 @@ interface PageHeroProps {
   subtitle: string;
   primaryCta?: Cta;
   secondaryCta?: Cta;
+  align?: "left" | "right";
+  compact?: boolean;
 }
 
 export function PageHero({
@@ -18,17 +20,31 @@ export function PageHero({
   title,
   subtitle,
   primaryCta,
-  secondaryCta
+  secondaryCta,
+  align = "left",
+  compact = false,
 }: PageHeroProps) {
   return (
-    <section className="hero">
+    <section className={`hero ${align === "right" ? "hero-right" : ""} ${compact ? "hero-compact" : ""}`}>
       <div className="hero-overlay" />
       <div className="container hero-content">
-        {eyebrow && <div className="hero-eyebrow">{eyebrow}</div>}
-        <h1 className="hero-title">{title}</h1>
-        <p className="hero-subtitle">{subtitle}</p>
+        {compact ? (
+          <>
+            <div className="hero-compact-head">
+              {eyebrow && <span className="hero-eyebrow hero-eyebrow-inline">{eyebrow}</span>}
+              <h1 className="hero-title hero-title-inline">{title}</h1>
+            </div>
+            <p className="hero-subtitle hero-subtitle-inline">{subtitle}</p>
+          </>
+        ) : (
+          <>
+            {eyebrow && <div className="hero-eyebrow">{eyebrow}</div>}
+            <h1 className="hero-title">{title}</h1>
+            <p className="hero-subtitle">{subtitle}</p>
+          </>
+        )}
         {(primaryCta || secondaryCta) && (
-          <div className="hero-actions">
+          <div className={`hero-actions ${compact ? "hero-actions-inline" : ""}`}>
             {primaryCta && (
               <Link href={primaryCta.href} className="btn primary">
                 {primaryCta.label}

@@ -18,9 +18,10 @@ export default function AttractionsPage() {
       <PageHero
         eyebrow="Experiences & tours"
         title="Attractions & Experiences"
-        subtitle="From regional highlights to international adventures—we arrange tours and experiences through trusted partners, tailored to your interests and schedule."
+        subtitle="Tours and experiences tailored to your interests."
         primaryCta={{ href: "/contact", label: "Plan an experience" }}
         secondaryCta={{ href: "/holiday-package", label: "Holiday packages" }}
+        compact
       />
 
       <Section

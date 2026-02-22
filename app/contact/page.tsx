@@ -13,9 +13,9 @@ export default function ContactPage() {
   return (
     <>
       <PageHero
-        eyebrow="Abu Dhabi"
         title="Contact us"
-        subtitle="Visit our office, get in touch by phone or email, or send us a message. We are here to help with corporate travel, holidays, visas, insurance, and attractions."
+        subtitle="We are here to help. Get in touch today."
+        compact
       />
 
       <Section id="locations" title="Our locations" subtitle="Visit us or get in touch—we’re here to help.">
