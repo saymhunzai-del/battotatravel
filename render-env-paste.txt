@@ -1,0 +1,10 @@
+# Copy everything below this line and paste into Render → Environment (or use "Bulk edit")
+# Replace YOUR_ATLAS_PASSWORD with your real MongoDB Atlas password (use %40 instead of @ if password has @)
+
+ADMIN_EMAIL=batotapanel@gmail.com
+ADMIN_PASSWORD=Abcd1234@
+AUTH_SECRET=binbatoota-auth-secret-2024
+MONGODB_URI=mongodb+srv://saymhunzai_db_user:YOUR_ATLAS_PASSWORD@cluster0.nz4mlid.mongodb.net/?appName=Cluster0
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=service_i9qhad9
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=service_i9qhad9
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=xegNcURFTVqRHwa7t

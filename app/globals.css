@@ -734,6 +734,20 @@ a.destination-card:hover img {
   color: #fff;
 }
 
+@media (max-width: 767px) {
+  .site-footer .container {
+    padding-left: 1.35rem;
+    padding-right: 1.35rem;
+  }
+  .footer-inner {
+    padding: 1.75rem 0 1.5rem;
+    gap: 1.5rem;
+  }
+  .footer-col {
+    text-align: left;
+  }
+}
+
 .footer-inner {
   display: grid;
   gap: 2rem 1.5rem;
