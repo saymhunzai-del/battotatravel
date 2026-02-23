@@ -14,6 +14,7 @@ export default function ContactPage() {
     <>
       <PageHero
         title="Contact us"
+        subtitle="Get in touch with us for all your travel needs."
         compact
       />
 
