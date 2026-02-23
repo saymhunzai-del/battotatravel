@@ -6,18 +6,17 @@ import { CtaStrip } from "@/components/CtaStrip";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Us | Bin Batoota Travel & Tourism",
+  title: "About Us | BIN BATOOTA TRAVEL & TOURISM",
   description:
-    "Established in 1976, Bin Batoota is a UAE National–owned travel and tourism company specializing in adventure, corporate, and leisure travel from Abu Dhabi."
+    "Established in 1976, BIN BATOOTA is a UAE National–owned travel and tourism company specializing in adventure, corporate, and leisure travel from Abu Dhabi."
 };
 
 export default function AboutUsPage() {
   return (
     <>
       <PageHero
-        eyebrow="Since 1976"
-        title="About Bin Batoota Travel & Tourism"
-        subtitle="Trusted travel partner since 1976."
+        title="About BIN BATOOTA TRAVEL & TOURISM"
+        subtitle="Trusted Travel Partner Since 1976."
         primaryCta={{ href: "/contact", label: "Get in touch" }}
         secondaryCta={{ href: "/corporate-travel", label: "Corporate solutions" }}
         compact
@@ -30,7 +29,7 @@ export default function AboutUsPage() {
       >
         <div className="content">
           <p>
-            Bin Batoota Travel & Tourism was established in 1976. Our remarkable
+            BIN BATOOTA TRAVEL & TOURISM was established in 1976. Our remarkable
             performance over the years has earned a reputation for exemplary travel
             and tourism services. We specialize in adventure travel and, with a team
             of dedicated, professional personnel, provide recreational and business
@@ -94,7 +93,7 @@ export default function AboutUsPage() {
       >
         <div className="content">
           <p>
-            At Bin Batoota we have highly trained personnel to manage your business,
+            At BIN BATOOTA we have highly trained personnel to manage your business,
             available and ready to cater to clients’ needs. Arrangements are
             tailored to suit business and vacation objectives, personal interests,
             and budget concerns. Our proficient personnel extend services with
@@ -113,21 +112,12 @@ export default function AboutUsPage() {
       <Section
         id="technology"
         title="Technology & alliances"
-        subtitle="Global reservation systems and strategic partnerships for your benefit."
+        subtitle="Strategic partnerships for your benefit."
       >
         <div className="grid two-columns">
-          <ContentBlock title="Reservation systems">
-            <p>
-              We rely on major global reservation systems—<strong>Amadeus, Galileo,
-              and Sabre</strong>—for all client reservations. For worldwide hotel
-              reservations we use <strong>Etihad Holidays, Emirates Holidays, and
-              Gullivers Travel Association (GTA)</strong>. For accounting and
-              reporting we operate on <strong>E-Travel (Oracle)</strong>.
-            </p>
-          </ContentBlock>
           <ContentBlock title="Strategic alliances">
             <p>
-              Bin Batoota is an <strong>accredited IATA member</strong>. Alliances
+              BIN BATOOTA is an <strong>accredited IATA member</strong>. Alliances
               with over 100 airlines and numerous hotels have been established
               through years of excellent affinity and good communication, enabling
               us to secure the best value and availability for you.

@@ -4,7 +4,7 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const EMAILJS_SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "service_i9qhad9";
-const EMAILJS_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "service_i9qhad9";
+const EMAILJS_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "template_krprxge";
 const EMAILJS_PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "xegNcURFTVqRHwa7t";
 
 export function ContactForm() {
@@ -90,7 +90,7 @@ export function ContactForm() {
         />
       </div>
       {status === "sent" && (
-        <p className="form-message success">Thank you. We will get back to you shortly.</p>
+        <p className="form-message success">Inquiry Received. We will get back to you shortly.</p>
       )}
       {status === "error" && (
         <p className="form-message error">Something went wrong. Please try again or call us.</p>

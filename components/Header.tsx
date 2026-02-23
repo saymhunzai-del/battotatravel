@@ -10,7 +10,6 @@ const navItems = [
   { href: "/corporate-travel", label: "Corporate Travel" },
   { href: "/holiday-package", label: "Holiday Package" },
   { href: "/visa-insurance", label: "Visa & Insurance" },
-  { href: "/attractions", label: "Attractions" },
   { href: "/contact", label: "Contact" }
 ];
 

@@ -40,11 +40,10 @@ export default async function HomePage() {
   return (
     <>
       <PageHero
-        eyebrow="Since 1976 • Abu Dhabi"
+        eyebrow="Trusted Travel Partner Since 1976"
         title="Your trusted partner for every journey."
-        subtitle="Bin Batoota Travel & Tourism specializes in thoughtfully crafted corporate and leisure travel across the globe, with dedicated advisors who understand the way you travel."
+        subtitle="BIN BATOOTA TRAVEL & TOURISM specializes in thoughtfully crafted corporate and leisure travel across the globe, with dedicated advisors who understand the way you travel."
         primaryCta={{ href: "/corporate-travel", label: "Corporate Travel Solutions" }}
-        secondaryCta={{ href: "/holiday-package", label: "Plan Your Holiday" }}
       />
 
       <Section
@@ -69,12 +68,12 @@ export default async function HomePage() {
         </div>
         <p style={{ marginTop: "1.25rem", textAlign: "left" }}>
           <Link href="/holiday-package" className="btn primary">
-            View all holiday packages
+            Plan Your Holiday
           </Link>
         </p>
       </Section>
 
-      <Section id="why-choose-us" tone="muted" title="Why choose Bin Batoota">
+      <Section id="why-choose-us" tone="muted" title="Why choose BIN BATOOTA">
         <WhyChooseUs />
       </Section>
 
@@ -82,7 +81,7 @@ export default async function HomePage() {
         <div className="grid two-columns">
           <div className="content">
             <p>
-              Established in 1976 in Abu Dhabi, Bin Batoota Travel & Tourism has grown
+              Established in 1976 in Abu Dhabi, BIN BATOOTA TRAVEL & TOURISM has grown
               into a trusted travel partner for leading corporations, government
               entities, and discerning leisure travelers across the region.
             </p>
@@ -102,7 +101,7 @@ export default async function HomePage() {
             </div>
           </div>
           <div className="content highlight-card">
-            <h3>Why organizations choose Bin Batoota</h3>
+            <h3>Why organizations choose BIN BATOOTA</h3>
             <ul>
               <li>Proven track record with major Abu Dhabi institutions</li>
               <li>Strong airline and hotel partnerships for better value</li>
@@ -134,32 +133,44 @@ export default async function HomePage() {
 
       <FeatureGrid
         id="key-offerings"
-        title="What we do best."
+        title="Our service"
         subtitle="Comprehensive travel solutions for enterprises, governments, and individuals."
         items={[
           {
-            title: "Corporate Travel Management",
+            title: "Airline Tickets",
             description:
-              "Centralized, policy-aware travel management for enterprises, with negotiated fares and dedicated account handling.",
-            href: "/corporate-travel"
+              "Book flights to destinations worldwide with competitive rates and flexible options.",
+            href: "/contact"
           },
           {
-            title: "Holiday Packages",
+            title: "Hotel Booking",
             description:
-              "Curated getaways and bespoke itineraries across the globe, tailored to your pace, preferences, and budget.",
-            href: "/holiday-package"
+              "Reserve accommodations ranging from budget hotels to luxury resorts tailored to your needs.",
+            href: "/contact"
           },
           {
-            title: "Visa & Travel Insurance",
+            title: "UAE Tourist Visa",
             description:
-              "Support with UAE tourist visas and travel insurance arrangements for individuals, families, and groups.",
+              "Assistance with UAE tourist visa applications for individuals, families, and groups.",
             href: "/visa-insurance"
           },
           {
-            title: "Attractions & Experiences",
+            title: "Travel Insurance",
             description:
-              "Access to regional and international attractions, tours, and experiences arranged through trusted partners.",
-            href: "/attractions"
+              "Comprehensive travel insurance coverage for peace of mind during your journeys.",
+            href: "/visa-insurance"
+          },
+          {
+            title: "Transportation",
+            description:
+              "Arranged ground transportation including transfers, car rentals, and more.",
+            href: "/contact"
+          },
+          {
+            title: "Airport Meet and Assist Services",
+            description:
+              "Personalized meet and greet services at airports for a smooth travel experience.",
+            href: "/contact"
           }
         ]}
       />

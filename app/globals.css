@@ -147,6 +147,8 @@ a {
   gap: 0.28rem;
   padding: 0;
   cursor: pointer;
+  position: relative;
+  z-index: 41;
 }
 
 .nav-toggle span {
@@ -157,6 +159,8 @@ a {
 }
 
 .nav-mobile {
+  position: relative;
+  z-index: 39;
   display: flex;
   flex-direction: column;
   padding: 0.6rem 1.5rem 1rem;
@@ -180,7 +184,7 @@ a {
   position: relative;
   padding: 3.5rem 0 3.5rem;
   overflow: hidden;
-  background: linear-gradient(160deg, rgba(0, 69, 78, 0.06) 0%, rgba(219, 187, 140, 0.15) 50%, #f8fafb 100%);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1200&q=80') center/cover no-repeat;
   border-bottom: 1px solid var(--border-light);
 }
 
@@ -195,12 +199,23 @@ a {
 .hero-content {
   position: relative;
   max-width: 680px;
+  margin: 0 auto;
+}
+
+.hero:not(.hero-compact) .hero-content {
+  text-align: center;
 }
 
 .hero-right .hero-content {
   margin-left: auto;
   margin-right: 0;
   text-align: right;
+}
+
+.hero:not(.hero-compact) .hero-eyebrow {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .hero-right .hero-eyebrow {
@@ -216,16 +231,15 @@ a {
   margin-left: auto;
 }
 
-/* Inner pages – compact, left-aligned, single-line style */
+/* Inner pages – compact, centered, single-line style */
 .hero-compact .hero-content {
-  margin-left: 0;
-  margin-right: auto;
-  text-align: left;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .hero-compact-head {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   gap: 0.5rem 1rem;
   margin-bottom: 0.5rem;
@@ -233,8 +247,11 @@ a {
 
 .hero-eyebrow-inline {
   margin: 0;
-  display: inline-flex;
+  display: flex;
   flex-shrink: 0;
+  font-weight: bold;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .hero-title-inline {
@@ -251,12 +268,14 @@ a {
 
 .hero-subtitle-inline {
   margin: 0 0 1rem;
+  margin-left: auto;
   font-size: clamp(0.8rem, 2vw, 0.875rem);
-  color: var(--text-soft);
+  color: white;
 }
 
 .hero-actions-inline {
   margin-top: 0;
+  justify-content: center;
 }
 
 .hero-eyebrow {
@@ -269,6 +288,7 @@ a {
   background: rgba(255, 255, 255, 0.85);
   color: var(--accent);
   font-size: 0.78rem;
+  font-weight: bold;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -283,7 +303,7 @@ a {
 
 .hero-subtitle {
   margin: 0;
-  color: var(--text-soft);
+  color: white;
   max-width: 34rem;
   font-size: 0.98rem;
   line-height: 1.5;
@@ -294,6 +314,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 0.9rem;
+  justify-content: center;
 }
 
 .btn {

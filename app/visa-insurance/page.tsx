@@ -6,7 +6,7 @@ import { CtaStrip } from "@/components/CtaStrip";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Visa & Insurance | Bin Batoota Travel & Tourism",
+  title: "Visa & Insurance | BIN BATOOTA TRAVEL & TOURISM",
   description:
     "UAE tourist visa services and travel insurance for individuals and groups. Processed in line with UAE rules and regulations."
 };
@@ -15,7 +15,6 @@ export default function VisaInsurancePage() {
   return (
     <>
       <PageHero
-        eyebrow="Visa & protection"
         title="Visa Services & Travel Insurance"
         subtitle="UAE visas and travel insurance, processed as per UAE law."
         primaryCta={{ href: "/contact", label: "Enquire now" }}
@@ -30,7 +29,7 @@ export default function VisaInsurancePage() {
       >
         <div className="content">
           <p>
-            Bin Batoota provides tourist visas to the UAE upon request, at a nominal
+            BIN BATOOTA provides tourist visas to the UAE upon request, at a nominal
             fee. All applications are processed and obtained in line with the rules
             and regulations governed by UAE law. Whether you are traveling for
             leisure, business, or to visit family, we can guide you through the
@@ -50,7 +49,7 @@ export default function VisaInsurancePage() {
       >
         <div className="content">
           <p>
-            Bin Batoota Travels is authorized to sell travel insurance and to cater
+            BIN BATOOTA Travels is authorized to sell travel insurance and to cater
             to groups and individuals as per their requirements. Travel insurance
             helps protect you against trip cancellation, medical emergencies,
             baggage loss, and other unforeseen events. Our team can recommend

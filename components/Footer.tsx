@@ -7,7 +7,6 @@ const quickLinks = [
   { href: "/corporate-travel", label: "Corporate Travel" },
   { href: "/holiday-package", label: "Holiday Package" },
   { href: "/visa-insurance", label: "Visa & Insurance" },
-  { href: "/attractions", label: "Attractions" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -15,7 +14,6 @@ const services = [
   { href: "/corporate-travel", label: "Corporate Travel Management" },
   { href: "/holiday-package", label: "Holiday Packages" },
   { href: "/visa-insurance", label: "Visa & Travel Insurance" },
-  { href: "/attractions", label: "Attractions & Tours" },
 ];
 
 export function Footer() {
@@ -26,7 +24,7 @@ export function Footer() {
           <Link href="/" className="footer-logo">
             <Image
               src="/images/logo.png"
-              alt="Bin Batoota Travel & Tourism"
+              alt="BIN BATOOTA TRAVEL & TOURISM"
               width={160}
               height={44}
               className="footer-logo-img"
@@ -43,6 +41,9 @@ export function Footer() {
               Adjacent to National Bank of Abu Dhabi Tower,
               <br />
               Abu Dhabi, United Arab Emirates
+            </p>
+            <p className="footer-text">
+              Office: 02 6262100 | Fax: 02 6260226 | PO Box: 7223
             </p>
           </div>
         </div>
@@ -92,7 +93,7 @@ export function Footer() {
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
           <span className="footer-copy">
-            © {new Date().getFullYear()} Bin Batoota Travel &amp; Tourism. All rights reserved.
+            © {new Date().getFullYear()} BIN BATOOTA TRAVEL &amp; TOURISM. All rights reserved.
           </span>
           <span className="footer-bottom-note">
             Corporate &amp; leisure travel specialists • UAE

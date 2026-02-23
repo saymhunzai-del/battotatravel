@@ -4,9 +4,9 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Bin Batoota Travel & Tourism",
+  title: "BIN BATOOTA TRAVEL & TOURISM",
   description:
-    "Established in 1976, Bin Batoota Travel & Tourism is a trusted UAE-based travel partner for corporate and leisure journeys worldwide."
+    "Established in 1976, BIN BATOOTA TRAVEL & TOURISM is a trusted UAE-based travel partner for corporate and leisure journeys worldwide."
 };
 
 export default function RootLayout({

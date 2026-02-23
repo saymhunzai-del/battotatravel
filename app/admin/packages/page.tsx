@@ -84,7 +84,7 @@ export default function AdminPackagesPage() {
             <h3>Package {i + 1}</h3>
             <label>Title <input value={pkg.title} onChange={(e) => update(i, "title", e.target.value)} required /></label>
             <label>Description <textarea value={pkg.description} onChange={(e) => update(i, "description", e.target.value)} required rows={2} /></label>
-            <label>Rate <input value={pkg.rate} onChange={(e) => update(i, "rate", e.target.value)} required /></label>
+            <label>Rate <input value={pkg.rate} onChange={(e) => update(i, "rate", e.target.value)} /></label>
             <label>Rate note <input value={pkg.rateNote} onChange={(e) => update(i, "rateNote", e.target.value)} /></label>
             <label>Image URL <input value={pkg.imageSrc} onChange={(e) => update(i, "imageSrc", e.target.value)} required /></label>
             <label>Image alt <input value={pkg.imageAlt} onChange={(e) => update(i, "imageAlt", e.target.value)} /></label>

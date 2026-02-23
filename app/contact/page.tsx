@@ -4,9 +4,9 @@ import { Section } from "@/components/Section";
 import { ContactForm } from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact | Bin Batoota Travel & Tourism",
+  title: "Contact | BIN BATOOTA TRAVEL & TOURISM",
   description:
-    "Get in touch with Bin Batoota in Abu Dhabi. Main office at Al Manara Pharmacy Building, Khalifa Street. Sunday–Thursday 08:00–19:30, Saturday 08:00–13:00 & 16:30–19:00."
+    "Get in touch with BIN BATOOTA in Abu Dhabi. Main office at Al Manara Pharmacy Building, Khalifa Street. Sunday–Thursday 08:00–19:30, Saturday 08:00–13:00 & 16:30–19:00."
 };
 
 export default function ContactPage() {
@@ -14,7 +14,6 @@ export default function ContactPage() {
     <>
       <PageHero
         title="Contact us"
-        subtitle="We are here to help. Get in touch today."
         compact
       />
 

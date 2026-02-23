@@ -9,7 +9,7 @@ import { getPackages } from "@/lib/packages";
 import { CtaStrip } from "@/components/CtaStrip";
 
 export const metadata: Metadata = {
-  title: "Holiday Package | Bin Batoota Travel & Tourism",
+  title: "Holiday Package | BIN BATOOTA TRAVEL & TOURISM",
   description:
     "Curated holiday packages and hotel stays worldwide. Quality, excellence, and the best possible rates for individuals and groups."
 };
@@ -19,7 +19,6 @@ export default async function HolidayPackagePage() {
   return (
     <>
       <PageHero
-        eyebrow="Leisure travel"
         title="Holiday Packages & Getaways"
         subtitle="Quality packages and competitive rates for individuals and groups."
         primaryCta={{ href: "/contact", label: "Plan your holiday" }}
@@ -62,7 +61,7 @@ export default async function HolidayPackagePage() {
         </div>
         <p style={{ marginTop: "1.25rem", textAlign: "left" }}>
           <Link href="/contact" className="btn primary">
-            Request a quote or customise
+            Get a Quote
           </Link>
         </p>
       </Section>
@@ -81,7 +80,7 @@ export default async function HolidayPackagePage() {
           />
           <Card
             title="Adventure & leisure"
-            description="Bin Batoota specializes in adventure travel alongside classic leisure and beach getaways."
+            description="BIN BATOOTA specializes in adventure travel alongside classic leisure and beach getaways."
             href="/attractions"
             ctaLabel="Explore experiences"
           />
@@ -95,7 +94,7 @@ export default async function HolidayPackagePage() {
       </Section>
 
       <Section id="marketing" title="How we reach you">
-        <ContentBlock title="Our approach">
+        <ContentBlock title="OUR APPROACH">
           <p>
             Our marketing strategy is based mainly on ensuring customers’
             recognition of our existence and the services we fulfill. We make the
@@ -115,15 +114,15 @@ export default async function HolidayPackagePage() {
           dates, and budget with the right package.
         </p>
         <p style={{ marginTop: "1rem" }}>
-          <Link href="/contact" className="btn primary">Request a holiday quote</Link>
+          <Link href="/contact" className="btn primary">Get a Quote</Link>
         </p>
       </Section>
 
       <CtaStrip
-        title="Start your holiday with Bin Batoota"
+        title="Start your holiday with BIN BATOOTA"
         subtitle="Personalized quotes, competitive rates, and seamless booking."
         href="/contact"
-        label="Request a quote"
+        label="Get a Quote"
       />
     </>
   );

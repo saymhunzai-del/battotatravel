@@ -6,7 +6,7 @@ import { CtaStrip } from "@/components/CtaStrip";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Corporate Travel | Bin Batoota Travel & Tourism",
+  title: "Corporate Travel | BIN BATOOTA TRAVEL & TOURISM",
   description:
     "Dedicated corporate travel management: negotiated fares, worldwide ticketing, policy support, and 24/7 service for enterprises and government entities."
 };
@@ -15,11 +15,10 @@ export default function CorporateTravelPage() {
   return (
     <>
       <PageHero
-        eyebrow="Enterprise solutions"
         title="Corporate Travel Management"
         subtitle="Corporate rates, discounts, and dedicated support."
         primaryCta={{ href: "/contact", label: "Request a proposal" }}
-        secondaryCta={{ href: "/about-us", label: "Why Bin Batoota" }}
+        secondaryCta={{ href: "/about-us", label: "Why BIN BATOOTA" }}
         compact
       />
 
@@ -30,7 +29,7 @@ export default function CorporateTravelPage() {
       >
         <div className="content">
           <p>
-            Bin Batoota provides competitive fares to all destinations and a
+            BIN BATOOTA provides competitive fares to all destinations and a
             one-stop shop with personalized service for all travel arrangements,
             maintaining strict confidentiality. We negotiate with various airlines
             on behalf of your company and keep you informed of the latest
