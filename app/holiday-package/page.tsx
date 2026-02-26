@@ -28,7 +28,7 @@ export default async function HolidayPackagePage() {
 
       <Section
         id="overview"
-        title="Tailored to you"
+        title="Tailored To You"
         subtitle="Individual or group bookings in any hotel category, with value-added benefits and amenities."
       >
         <div className="content">
@@ -43,7 +43,7 @@ export default async function HolidayPackagePage() {
         </div>
       </Section>
 
-      <Section id="packages" tone="muted" title="Holiday packages">
+      <Section id="packages" tone="muted" title="Holiday Packages">
         <div className="package-grid">
           {featuredPackages.map((pkg) => (
             <PackageCard
@@ -66,14 +66,14 @@ export default async function HolidayPackagePage() {
         </p>
       </Section>
 
-      <Section id="offerings" title="What we offer">
+      <Section id="offerings" title="What We Offer">
         <div className="feature-grid">
           <Card
-            title="Hotel packages"
+            title="Hotel Packages"
             description="Individual or group bookings in any hotel of any category, provided instantly with competitive rates."
           />
           <Card
-            title="Flights + stay"
+            title="Flights + Stay"
             description="Combined air and accommodation packages through Etihad Holidays, Emirates Holidays, and GTA."
             href="/contact"
             ctaLabel="Enquire"
@@ -93,7 +93,7 @@ export default async function HolidayPackagePage() {
         </div>
       </Section>
 
-      <Section id="marketing" title="How we reach you">
+      <Section id="marketing" title="How We Reach You">
         <ContentBlock title="OUR APPROACH">
           <p>
             Our marketing strategy is based mainly on ensuring customers’
@@ -108,7 +108,7 @@ export default async function HolidayPackagePage() {
         </ContentBlock>
       </Section>
 
-      <Section tone="muted" title="Ready to plan?">
+      <Section tone="muted" title="Ready To Plan?">
         <p className="muted">
           Contact our team for a personalized quote. We’ll match your destination,
           dates, and budget with the right package.

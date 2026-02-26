@@ -13,6 +13,8 @@ interface PageHeroProps {
   secondaryCta?: Cta;
   align?: "left" | "right";
   compact?: boolean;
+  /** additional class applied to the subtitle element */
+  subtitleClassName?: string;
 }
 
 export function PageHero({
@@ -23,6 +25,7 @@ export function PageHero({
   secondaryCta,
   align = "left",
   compact = false,
+  subtitleClassName = "",
 }: PageHeroProps) {
   return (
     <section className={`hero ${align === "right" ? "hero-right" : ""} ${compact ? "hero-compact" : ""}`}>
@@ -34,13 +37,13 @@ export function PageHero({
               {eyebrow && <span className="hero-eyebrow hero-eyebrow-inline">{eyebrow}</span>}
               <h1 className="hero-title hero-title-inline">{title}</h1>
             </div>
-            <p className="hero-subtitle hero-subtitle-inline">{subtitle}</p>
+            <p className={`hero-subtitle hero-subtitle-inline ${subtitleClassName || ""}`}>{subtitle}</p>
           </>
         ) : (
           <>
             {eyebrow && <div className="hero-eyebrow">{eyebrow}</div>}
             <h1 className="hero-title">{title}</h1>
-            <p className="hero-subtitle">{subtitle}</p>
+            <p className={`hero-subtitle ${subtitleClassName || ""}`}>{subtitle}</p>
           </>
         )}
         {(primaryCta || secondaryCta) && (

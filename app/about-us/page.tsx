@@ -15,7 +15,7 @@ export default function AboutUsPage() {
   return (
     <>
       <PageHero
-        title="About BIN BATOOTA TRAVEL & TOURISM"
+        title="About Bin Batoota Travel"
         subtitle="Trusted Travel Partner Since 1976."
         primaryCta={{ href: "/contact", label: "Get in touch" }}
         secondaryCta={{ href: "/corporate-travel", label: "Corporate solutions" }}
@@ -24,7 +24,7 @@ export default function AboutUsPage() {
 
       <Section
         id="who-we-are"
-        title="Who we are"
+        title="Who We Are"
         subtitle="Sole proprietorship owned by a UAE National, operating from the heart of Abu Dhabi."
       >
         <div className="content">
@@ -38,16 +38,16 @@ export default function AboutUsPage() {
         </div>
       </Section>
 
-      <Section id="location" tone="muted" title="Our locations">
+      <Section id="location" tone="muted" title="Our Locations">
         <div className="grid two-columns">
-          <ContentBlock title="Main office">
+          <ContentBlock title="Main Office">
             <p>
               Our office is within the city limits of <strong>Al Manara Pharmacy
               Building, Khalifa Street</strong>, adjacent to the National Bank of
               Abu Dhabi Tower, Abu Dhabi, United Arab Emirates.
             </p>
           </ContentBlock>
-          <ContentBlock title="Implant office">
+          <ContentBlock title="Implant Office">
             <p>
               An implant office is situated at the <strong>Department of Transport
               (D.O.T.)</strong>, facilitating their travel requirements with
@@ -59,7 +59,7 @@ export default function AboutUsPage() {
 
       <Section
         id="hours"
-        title="Working hours"
+        title="Working Hours"
         subtitle="We are here when you need us."
       >
         <ul className="list-check">
@@ -71,7 +71,7 @@ export default function AboutUsPage() {
       <Section
         id="mission"
         tone="muted"
-        title="Our mission"
+        title="Our Mission"
         subtitle="Internally we intend to create and nurture a healthy, respectful, and enjoyable environment."
       >
         <div className="content">
@@ -88,7 +88,7 @@ export default function AboutUsPage() {
 
       <Section
         id="associates"
-        title="Our team"
+        title="Our Team"
         subtitle="Highly trained personnel, ready to cater to your needs with integrity and prompt attention."
       >
         <div className="content">
@@ -111,11 +111,11 @@ export default function AboutUsPage() {
 
       <Section
         id="technology"
-        title="Technology & alliances"
+        title="Technology & Alliances"
         subtitle="Strategic partnerships for your benefit."
       >
         <div className="grid two-columns">
-          <ContentBlock title="Strategic alliances">
+          <ContentBlock title="Strategic Alliances">
             <p>
               BIN BATOOTA is an <strong>accredited IATA member</strong>. Alliances
               with over 100 airlines and numerous hotels have been established
@@ -127,7 +127,7 @@ export default function AboutUsPage() {
       </Section>
 
       <CtaStrip
-        title="Let’s work together"
+        title="Let’s Work Together"
         subtitle="Whether you need corporate travel solutions or a bespoke holiday, we’re here to help."
         href="/contact"
         label="Get in touch"

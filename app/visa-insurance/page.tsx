@@ -15,16 +15,16 @@ export default function VisaInsurancePage() {
   return (
     <>
       <PageHero
-        title="Visa Services & Travel Insurance"
-        subtitle="UAE visas and travel insurance, processed as per UAE law."
+        title="Visa Services & Travel"
+        subtitle="UAE visas processed in accordance with UAE law."
         primaryCta={{ href: "/contact", label: "Enquire now" }}
-        secondaryCta={{ href: "/holiday-package", label: "Holiday packages" }}
+        secondaryCta={{ href: "/holiday-package", label: "Holiday Packages" }}
         compact
       />
 
       <Section
         id="visa"
-        title="UAE tourist visas"
+        title="UAE Tourist Visas"
         subtitle="Processed and obtained as per the rules and regulations governed by UAE law."
       >
         <div className="content">
@@ -44,7 +44,7 @@ export default function VisaInsurancePage() {
       <Section
         id="insurance"
         tone="muted"
-        title="Travel insurance"
+        title="Travel Insurance"
         subtitle="Authorized to vend travel insurance for groups and individuals."
       >
         <div className="content">
@@ -61,8 +61,8 @@ export default function VisaInsurancePage() {
         </div>
       </Section>
 
-      <Section id="combine" tone="muted" title="Visa, insurance & travel together">
-        <ContentBlock title="One point of contact">
+      <Section id="combine" tone="muted" title="Visa, Insurance & Travel Together">
+        <ContentBlock title="One Point Of Contact">
           <p>
             When you book your holiday or corporate trip with us, we can arrange
             your UAE tourist visa and travel insurance in one place—reducing
@@ -72,7 +72,7 @@ export default function VisaInsurancePage() {
       </Section>
 
       <CtaStrip
-        title="Need a visa or travel insurance?"
+        title="Need A Visa Or Travel Insurance?"
         subtitle="We’ll guide you through requirements and get you covered."
         href="/contact"
         label="Enquire now"

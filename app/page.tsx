@@ -48,7 +48,7 @@ export default async function HomePage() {
 
       <Section
         id="packages"
-        title="Featured holiday packages"
+        title="Featured Holiday Packages"
         subtitle="Handpicked getaways with competitive rates. Contact us for dates and customisation."
       >
         <div className="package-grid">
@@ -77,7 +77,7 @@ export default async function HomePage() {
         <WhyChooseUs />
       </Section>
 
-      <Section id="overview" title="A heritage of service, a passion for travel.">
+      <Section id="overview" title="A Heritage Of Service, A Passion For Travel.">
         <div className="grid two-columns">
           <div className="content">
             <p>
@@ -112,7 +112,7 @@ export default async function HomePage() {
         </div>
       </Section>
 
-      <Section id="destinations" tone="muted" title="Popular destinations">
+      <Section id="destinations" tone="muted" title="Popular Destinations">
         <div className="destinations-grid">
           {destinations.map((d) => (
             <DestinationCard
@@ -133,9 +133,9 @@ export default async function HomePage() {
 
       <FeatureGrid
         id="key-offerings"
-        title="Our service"
+        title="Our Service"
         subtitle="Comprehensive travel solutions for enterprises, governments, and individuals."
-        items={[
+        items={[ 
           {
             title: "Airline Tickets",
             description:
@@ -178,7 +178,7 @@ export default async function HomePage() {
       <Section
         id="corporate-trust"
         tone="muted"
-        title="Trusted by leading institutions."
+        title="Trusted By Leading Institutions."
         subtitle="Long-standing relationships across energy, government, healthcare, education, and construction."
       >
         <p className="muted">
@@ -193,10 +193,10 @@ export default async function HomePage() {
       </Section>
 
       <CtaStrip
-        title="Ready to plan your next trip?"
+        title="Ready To Plan Your Next Trip?"
         subtitle="Our team is here to help with corporate travel, holidays, visas, and more."
         href="/contact"
-        label="Contact us today"
+        label="Contact us Today"
       />
     </>
   );

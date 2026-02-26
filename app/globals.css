@@ -41,6 +41,16 @@ body {
   color: var(--text);
 }
 
+/* Headings should capitalize each word for consistent styling */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -207,9 +217,10 @@ a {
 }
 
 .hero-right .hero-content {
-  margin-left: auto;
+  /* keep content centered except subtitle which will be nudged */
+  margin-left: 0;
   margin-right: 0;
-  text-align: right;
+  text-align: center;
 }
 
 .hero:not(.hero-compact) .hero-eyebrow {
@@ -229,12 +240,29 @@ a {
 
 .hero-right .hero-subtitle {
   margin-left: auto;
+  max-width: 65%; /* limit width so subtitle shifts right without spanning full width */
 }
 
 /* Inner pages – compact, centered, single-line style */
 .hero-compact .hero-content {
   margin: 0 auto;
   text-align: center;
+}
+
+/* compact hero variant that should align right */
+.hero-compact.hero-right .hero-content {
+  text-align: right;
+  margin-left: auto;
+  margin-right: 0;
+}
+.hero-compact.hero-right .hero-subtitle {
+  margin-left: auto;
+  max-width: 65%; /* same adjustment for compact hero */
+}
+
+/* allow compact heroes to be left-aligned when .hero-left is added */
+.hero-compact.hero-left .hero-content {
+  text-align: left;
 }
 
 .hero-compact-head {
@@ -268,9 +296,10 @@ a {
 
 .hero-subtitle-inline {
   margin: 0 0 1rem;
-  margin-left: auto;
   font-size: clamp(0.8rem, 2vw, 0.875rem);
   color: white;
+  /* subtitle also no longer pushed right */
+  margin-left: 0;
 }
 
 .hero-actions-inline {
@@ -307,6 +336,11 @@ a {
   max-width: 34rem;
   font-size: 0.98rem;
   line-height: 1.5;
+}
+
+/* utility class to nudge subtitles slightly to the right */
+.subtitle-shift-right {
+  margin-left: 1rem;
 }
 
 .hero-actions {
@@ -364,8 +398,13 @@ a {
 }
 
 .cta-strip-inner {
-  text-align: left;
-  max-width: 32rem;
+  /* center contents (title, subtitle, button) horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 40rem; /* slightly wider to accommodate centered layout */
+  margin: 0 auto;
 }
 
 .cta-strip-title {
@@ -432,6 +471,7 @@ a {
 .grid.two-columns {
   display: grid;
   gap: 1.6rem;
+  align-items: start; /* ensure right-hand card aligns with left column content */
 }
 
 @media (min-width: 840px) {
@@ -464,7 +504,13 @@ a {
   padding: 1.4rem 1.3rem;
   border: 1px solid var(--border-subtle);
   box-shadow: var(--shadow-card);
+  /* ensure card sits at top of its grid row so it lines up with adjacent content */
+  align-self: start;
+  /* absolute shift using relative positioning for a consistent lift */
+  position: relative;
+  top: -3.5rem; /* increase lift further so card reaches header line */
 }
+
 
 .highlight-card h3 {
   margin: 0 0 0.6rem;
@@ -896,6 +942,7 @@ a.destination-card:hover img {
 .footer-hours-time {
   font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.82);
+  white-space: nowrap; /* keep AM/PM on same line */
 }
 
 .footer-badge {

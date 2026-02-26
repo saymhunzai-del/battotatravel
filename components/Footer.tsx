@@ -4,16 +4,16 @@ import Image from "next/image";
 const quickLinks = [
   { href: "/", label: "Home" },
   { href: "/about-us", label: "About Us" },
-  { href: "/corporate-travel", label: "Corporate Travel" },
   { href: "/holiday-package", label: "Holiday Package" },
-  { href: "/visa-insurance", label: "Visa & Insurance" },
-  { href: "/contact", label: "Contact" },
+  { href: "/corporate-travel", label: "Corporate Travel" },
+  { href: "/visa-insurance", label: "Visa Services & Travel" },
+  { href: "/contact", label: "Contact Us" },
 ];
 
 const services = [
   { href: "/corporate-travel", label: "Corporate Travel Management" },
   { href: "/holiday-package", label: "Holiday Packages" },
-  { href: "/visa-insurance", label: "Visa & Travel Insurance" },
+  { href: "/visa-insurance", label: "Visa & Travel" },
 ];
 
 export function Footer() {
@@ -36,14 +36,16 @@ export function Footer() {
           <div className="footer-address">
             <p className="footer-address-title">Main Office</p>
             <p className="footer-text">
-              Al Manara Pharmacy Building, Khalifa Street,
+              Khalifa Street,
               <br />
               Adjacent to National Bank of Abu Dhabi Tower,
               <br />
               Abu Dhabi, United Arab Emirates
             </p>
             <p className="footer-text">
-              Office: 02 6262100 | Fax: 02 6260226 | PO Box: 7223
+              Office: 02 6262100 | Fax: 02 6260226
+              <br />
+              PO Box: 7223
             </p>
           </div>
         </div>
@@ -79,11 +81,11 @@ export function Footer() {
           <ul className="footer-hours">
             <li>
               <span className="footer-hours-days">Sunday – Thursday</span>
-              <span className="footer-hours-time">08:00 a.m – 07:30 p.m</span>
+              <span className="footer-hours-time" style={{ whiteSpace: "nowrap" }}>08:00 a.m – 07:30 p.m</span>
             </li>
             <li>
               <span className="footer-hours-days">Saturday</span>
-              <span className="footer-hours-time">08:00 a.m – 01:00 p.m &amp; 04:30 p.m – 07:00 p.m</span>
+              <span className="footer-hours-time" style={{ whiteSpace: "nowrap" }}>08:00 a.m – 01:00 p.m &amp; 04:30 p.m – 07:00 p.m</span>
             </li>
           </ul>
           <p className="footer-badge">IATA Accredited</p>

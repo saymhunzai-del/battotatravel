@@ -24,7 +24,7 @@ export default function CorporateTravelPage() {
 
       <Section
         id="overview"
-        title="Why enterprises choose us"
+        title="Why Enterprises Choose Us"
         subtitle="A one-stop shop with personalized service and confidentiality."
       >
         <div className="content">
@@ -43,7 +43,7 @@ export default function CorporateTravelPage() {
         </div>
       </Section>
 
-      <Section id="services" tone="muted" title="Scope of corporate services">
+      <Section id="services" tone="muted" title="Scope Of Corporate Services">
         <ul className="list-check">
           <li>Worldwide air ticketing and reservation as per your company requirements</li>
           <li>Expert advice on air travel, discounts, and business travel arrangements</li>

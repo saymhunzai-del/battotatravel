@@ -3,9 +3,11 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
-const EMAILJS_SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "service_i9qhad9";
-const EMAILJS_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "template_krprxge";
-const EMAILJS_PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "xegNcURFTVqRHwa7t";
+const EMAILJS_SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
+const EMAILJS_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
+const EMAILJS_PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
+
+const COMPANY_EMAIL = "batoota@batoota.ae"; // Must match {{email}} in template
 
 export function ContactForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
@@ -13,24 +15,29 @@ export function ContactForm() {
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus("sending");
+
     const form = e.currentTarget;
     const formData = new FormData(form);
+
     try {
       await emailjs.send(
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
         {
-          from_name: formData.get("name"),
-          from_email: formData.get("email"),
-          phone: formData.get("phone"),
-          subject: formData.get("subject"),
-          message: formData.get("message"),
+          email: COMPANY_EMAIL, // REQUIRED for {{email}}
+          from_name: formData.get("name") as string,
+          from_email: formData.get("email") as string,
+          phone: formData.get("phone") as string,
+          subject: formData.get("subject") as string,
+          message: formData.get("message") as string,
         },
         EMAILJS_PUBLIC_KEY
       );
+
       setStatus("sent");
       form.reset();
-    } catch {
+    } catch (error) {
+      console.error("EmailJS Error:", error);
       setStatus("error");
     }
   }
@@ -45,9 +52,9 @@ export function ContactForm() {
           type="text"
           required
           placeholder="Your name"
-          autoComplete="name"
         />
       </div>
+
       <div className="form-row">
         <label htmlFor="contact-email">Email</label>
         <input
@@ -56,9 +63,9 @@ export function ContactForm() {
           type="email"
           required
           placeholder="you@company.com"
-          autoComplete="email"
         />
       </div>
+
       <div className="form-row">
         <label htmlFor="contact-phone">Phone</label>
         <input
@@ -66,19 +73,20 @@ export function ContactForm() {
           name="phone"
           type="tel"
           placeholder="+971 50 000 0000"
-          autoComplete="tel"
         />
       </div>
+
       <div className="form-row">
         <label htmlFor="contact-subject">Subject</label>
         <select id="contact-subject" name="subject">
-          <option value="general">General enquiry</option>
-          <option value="corporate">Corporate travel</option>
-          <option value="holiday">Holiday package</option>
-          <option value="visa">Visa & insurance</option>
-          <option value="attractions">Attractions & tours</option>
+          <option value="General Enquiry">General Enquiry</option>
+          <option value="Corporate Travel">Corporate Travel</option>
+          <option value="Holiday Package">Holiday Package</option>
+          <option value="Visa & Insurance">Visa & Insurance</option>
+          <option value="Attractions & Tours">Attractions & Tours</option>
         </select>
       </div>
+
       <div className="form-row">
         <label htmlFor="contact-message">Message</label>
         <textarea
@@ -89,13 +97,24 @@ export function ContactForm() {
           placeholder="How can we help?"
         />
       </div>
+
       {status === "sent" && (
-        <p className="form-message success">Inquiry Received. We will get back to you shortly.</p>
+        <p className="form-message success">
+          Inquiry Received. We will get back to you shortly.
+        </p>
       )}
+
       {status === "error" && (
-        <p className="form-message error">Something went wrong. Please try again or call us.</p>
+        <p className="form-message error">
+          Something went wrong. Please try again or call us.
+        </p>
       )}
-      <button type="submit" className="btn primary" disabled={status === "sending"}>
+
+      <button
+        type="submit"
+        className="btn primary"
+        disabled={status === "sending"}
+      >
         {status === "sending" ? "Sending…" : "Send message"}
       </button>
     </form>

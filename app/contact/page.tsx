@@ -6,26 +6,27 @@ import { ContactForm } from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Contact | BIN BATOOTA TRAVEL & TOURISM",
   description:
-    "Get in touch with BIN BATOOTA in Abu Dhabi. Main office at Al Manara Pharmacy Building, Khalifa Street. Sunday–Thursday 08:00–19:30, Saturday 08:00–13:00 & 16:30–19:00."
+    "Get in touch with BIN BATOOTA in Abu Dhabi. Main office on Khalifa Street. Sunday–Thursday 08:00–19:30, Saturday 08:00–13:00 & 16:30–19:00."
 };
 
 export default function ContactPage() {
   return (
     <>
       <PageHero
-        title="Contact us"
+        title="Contact Us"
         subtitle="Get in touch with us for all your travel needs."
         compact
+        subtitleClassName="subtitle-shift-right"
       />
 
-      <Section id="locations" title="Our locations" subtitle="Visit us or get in touch—we’re here to help.">
+      <Section id="locations" title="Our Locations" subtitle="Visit us or get in touch—we’re here to help.">
         <div className="page-content-grid">
           <div className="content">
             <div className="content-block">
-              <h3 className="content-block-title">Main office</h3>
+              <h3 className="content-block-title">Main Office</h3>
               <div className="content-block-body">
                 <p>
-                  Al Manara Pharmacy Building, Khalifa Street,
+                  Khalifa Street,
                   <br />
                   Adjacent to National Bank of Abu Dhabi Tower,
                   <br />
@@ -36,24 +37,14 @@ export default function ContactPage() {
                 </p>
               </div>
             </div>
-            <div className="content-block">
-              <h3 className="content-block-title">Implant office</h3>
-              <div className="content-block-body">
-                <p style={{ marginBottom: 0 }}>
-                  Department of Transport (D.O.T.)
-                  <br />
-                  On-site support for DOT travel requirements
-                </p>
-              </div>
-            </div>
           </div>
           <aside className="sidebar-card">
             <h3>Working hours</h3>
-            <p><strong>Sunday – Thursday</strong><br />08:00 a.m – 07:30 p.m</p>
+            <p><strong>Sunday – Thursday</strong><br /><span style={{whiteSpace: "nowrap"}}>08:00 a.m – 07:30 p.m</span></p>
             <p style={{ marginTop: "0.6rem" }}>
               <strong>Saturday</strong><br />
-              08:00 a.m – 01:00 p.m<br />
-              04:30 p.m – 07:00 p.m
+              <span style={{whiteSpace: "nowrap"}}>08:00 a.m – 01:00 p.m</span><br />
+              <span style={{whiteSpace: "nowrap"}}>04:30 p.m – 07:00 p.m</span>
             </p>
           </aside>
         </div>
@@ -61,8 +52,7 @@ export default function ContactPage() {
 
       <Section id="enquiry" tone="muted" title="Send us a message">
         <p className="muted" style={{ marginBottom: "0.5rem" }}>
-          Use the form below for general enquiries, corporate travel proposals,
-          holiday quotes, visa and insurance requests, or attraction bookings.
+          Use the form below for general enquiries, corporate travel proposals, or to get a quote for holidays, visas, or attractions.
         </p>
         <p className="muted" style={{ marginBottom: "1.25rem", fontSize: "0.9rem" }}>
           We typically respond within 24 hours during business days.
