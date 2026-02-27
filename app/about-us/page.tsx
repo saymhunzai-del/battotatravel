@@ -49,9 +49,6 @@ export default function AboutUsPage() {
           </ContentBlock>
           <ContentBlock title="Implant Office">
             <p>
-              An implant office is situated at the <strong>Department of Transport
-              (D.O.T.)</strong>, facilitating their travel requirements with
-              on-site support.
             </p>
           </ContentBlock>
         </div>
@@ -63,8 +60,8 @@ export default function AboutUsPage() {
         subtitle="We are here when you need us."
       >
         <ul className="list-check">
-          <li><strong>Sunday – Thursday:</strong> 08:00 a.m – 07:30 p.m</li>
-          <li><strong>Saturday:</strong> 08:00 a.m – 01:00 p.m and 04:30 p.m – 07:00 p.m</li>
+          <li><strong>Sunday – Thursday:</strong> 08:00 AM – 07:30 PM</li>
+          <li><strong>Saturday:</strong> 08:00 AM – 01:00 PM and 04:30 PM – 07:00 PM</li>
         </ul>
       </Section>
 
