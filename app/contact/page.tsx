@@ -40,11 +40,11 @@ export default function ContactPage() {
           </div>
           <aside className="sidebar-card">
             <h3>Working hours</h3>
-            <p><strong>Sunday – Thursday</strong><br /><span style={{whiteSpace: "nowrap"}}>08:00 a.m – 07:30 p.m</span></p>
+            <p><strong>Sunday – Thursday</strong><br /><span style={{whiteSpace: "nowrap"}}>08:00 AM – 07:30 PM</span></p>
             <p style={{ marginTop: "0.6rem" }}>
               <strong>Saturday</strong><br />
-              <span style={{whiteSpace: "nowrap"}}>08:00 a.m – 01:00 p.m</span><br />
-              <span style={{whiteSpace: "nowrap"}}>04:30 p.m – 07:00 p.m</span>
+              <span style={{whiteSpace: "nowrap"}}>08:00 AM – 01:00 PM</span><br />
+              <span style={{whiteSpace: "nowrap"}}>04:30 PM – 07:00 PM</span>
             </p>
           </aside>
         </div>

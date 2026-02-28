@@ -81,11 +81,11 @@ export function Footer() {
           <ul className="footer-hours">
             <li>
               <span className="footer-hours-days">Sunday – Thursday</span>
-              <span className="footer-hours-time" style={{ whiteSpace: "nowrap" }}>08:00 a.m – 07:30 p.m</span>
+              <span className="footer-hours-time" style={{ whiteSpace: "nowrap" }}>08:00 AM – 07:30 PM</span>
             </li>
             <li>
               <span className="footer-hours-days">Saturday</span>
-              <span className="footer-hours-time" style={{ whiteSpace: "nowrap" }}>08:00 a.m – 01:00 p.m &amp; 04:30 p.m – 07:00 p.m</span>
+              <span className="footer-hours-time" style={{ whiteSpace: "nowrap" }}>08:00 AM – 01:00 PM &amp; 04:30 PM – 07:00 PM</span>
             </li>
           </ul>
           <p className="footer-badge">IATA Accredited</p>

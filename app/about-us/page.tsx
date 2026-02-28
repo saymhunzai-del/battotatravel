@@ -42,8 +42,7 @@ export default function AboutUsPage() {
         <div className="grid two-columns">
           <ContentBlock title="Main Office">
             <p>
-              Our office is within the city limits of <strong>Al Manara Pharmacy
-              Building, Khalifa Street</strong>, adjacent to the National Bank of
+              Our office is within the city limits of <strong></strong>, adjacent to the National Bank of
               Abu Dhabi Tower, Abu Dhabi, United Arab Emirates.
             </p>
           </ContentBlock>
@@ -63,8 +62,8 @@ export default function AboutUsPage() {
         subtitle="We are here when you need us."
       >
         <ul className="list-check">
-          <li><strong>Sunday – Thursday:</strong> 08:00 a.m – 07:30 p.m</li>
-          <li><strong>Saturday:</strong> 08:00 a.m – 01:00 p.m and 04:30 p.m – 07:00 p.m</li>
+          <li><strong>Sunday – Thursday:</strong> 08:00 AM – 07:30 PM</li>
+          <li><strong>Saturday:</strong> 08:00 AM – 01:00 PM and 04:30 PM – 07:00 PM</li>
         </ul>
       </Section>
 
