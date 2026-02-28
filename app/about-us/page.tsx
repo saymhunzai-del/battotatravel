@@ -48,9 +48,6 @@ export default function AboutUsPage() {
           </ContentBlock>
           <ContentBlock title="Implant Office">
             <p>
-              An implant office is situated at the <strong>Department of Transport
-              (D.O.T.)</strong>, facilitating their travel requirements with
-              on-site support.
             </p>
           </ContentBlock>
         </div>
