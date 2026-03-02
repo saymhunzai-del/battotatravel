@@ -46,13 +46,7 @@ export default function AboutUsPage() {
               Abu Dhabi Tower, Abu Dhabi, United Arab Emirates.
             </p>
           </ContentBlock>
-          <ContentBlock title="Implant Office">
-            <p>
-              An implant office is situated at the <strong>Department of Transport
-              (D.O.T.)</strong>, facilitating their travel requirements with
-              on-site support.
-            </p>
-          </ContentBlock>
+        
         </div>
       </Section>
 
